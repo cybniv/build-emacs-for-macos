@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.6.58](https://github.com/cybniv/build-emacs-for-macos/compare/v0.6.57...v0.6.58) (2025-01-09)
+
+
+### Features
+
+* **build/options:** add --optimize and related flags ([#119](https://github.com/cybniv/build-emacs-for-macos/issues/119)) ([8267ac1](https://github.com/cybniv/build-emacs-for-macos/commit/8267ac166203c0c495520e6970650735702eac35))
+* **builder/cask:** support shared helpers template ([97f77f3](https://github.com/cybniv/build-emacs-for-macos/commit/97f77f3b1043b66da6ec737e5db91605ec961d08))
+* **deps:** add support for Nix package manager ([#116](https://github.com/cybniv/build-emacs-for-macos/issues/116)) ([6e2b9aa](https://github.com/cybniv/build-emacs-for-macos/commit/6e2b9aa44ae1cbc3eec8ec7318ce9c9968e2d673))
+* **nix/deps:** update nixpkgs from 24.11-beta to 24.11 ([e030fee](https://github.com/cybniv/build-emacs-for-macos/commit/e030fee6704618b7ddefea7424dff4e94f43e84d))
+* **options:** add --patch option which accepts file path or URL ([#127](https://github.com/cybniv/build-emacs-for-macos/issues/127)) ([66ccd9c](https://github.com/cybniv/build-emacs-for-macos/commit/66ccd9c6fd077d558eae484cdbab831486fbfd58))
+* **package:** produce and include configure output log ([#118](https://github.com/cybniv/build-emacs-for-macos/issues/118)) ([5c513ce](https://github.com/cybniv/build-emacs-for-macos/commit/5c513ce2e7536c57f43a49739b3f0f66d15f7b6d))
+* **patches/alpha-background:** add experimental alpha-background patch ([#129](https://github.com/cybniv/build-emacs-for-macos/issues/129)) ([c53c398](https://github.com/cybniv/build-emacs-for-macos/commit/c53c398cace6479a9c188e46196462791960abee)), closes [#111](https://github.com/cybniv/build-emacs-for-macos/issues/111)
+* **startup:** replace bundled site-start.el approach with a custom source patch ([#124](https://github.com/cybniv/build-emacs-for-macos/issues/124)) ([03ed54c](https://github.com/cybniv/build-emacs-for-macos/commit/03ed54ca78ce15b61f5c875f97410b3ff21ecd62))
+
+
+### Bug Fixes
+
+* **bootstrap:** add Ruby (bundle install) to make bootstrap ([bc62c89](https://github.com/cybniv/build-emacs-for-macos/commit/bc62c890ed1aafe767286feed3eac0437ff62dc0))
+* **bootstrap:** remove --no-upgrade option from brew bundle ([2f0baba](https://github.com/cybniv/build-emacs-for-macos/commit/2f0babae990f908d706f5f60dc4a11573918c23d))
+* **build/embed:** include all Emacs C sources and related files in the Emacs.app bundle ([#120](https://github.com/cybniv/build-emacs-for-macos/issues/120)) ([ccb4f3f](https://github.com/cybniv/build-emacs-for-macos/commit/ccb4f3f438652c7ae98c202b8afed8861f40eeec))
+* **builder/cask:** ensure release info helpers return correct asset ([af0b2b8](https://github.com/cybniv/build-emacs-for-macos/commit/af0b2b83abd5af0e61a085da386cc0da389f6588))
+* **compile-options:** increase runtime max open files limit ([#115](https://github.com/cybniv/build-emacs-for-macos/issues/115)) ([ca8951c](https://github.com/cybniv/build-emacs-for-macos/commit/ca8951ccd350ecee5ad6c637caae0af1831a9eb5)), closes [#106](https://github.com/cybniv/build-emacs-for-macos/issues/106)
+* **emacs-builder:** resolve issues with notarizing Emacs app ([#100](https://github.com/cybniv/build-emacs-for-macos/issues/100)) ([1743035](https://github.com/cybniv/build-emacs-for-macos/commit/1743035a6d5d8c07a2c1da3f76cafe156e4ec31d))
+* **help:** correct formatting of help text output ([db72381](https://github.com/cybniv/build-emacs-for-macos/commit/db723817bf6c0ac85da1790a1d50fbea774cc0c0))
+* **local-lisp-path:** add Apple Silicon homebrew lisp-site ([8a1ae4d](https://github.com/cybniv/build-emacs-for-macos/commit/8a1ae4df1ca37a851f9936fcf2081536837e4c67))
+* **nix/flake:** rename flake-package-versions.txt to flake.pkgs ([d7723ee](https://github.com/cybniv/build-emacs-for-macos/commit/d7723ee766574b6597997de7c54fb7ed7f37965c))
+* **patches:** improve chance of successful patch application by using -l ([d396165](https://github.com/cybniv/build-emacs-for-macos/commit/d396165808ab5852566e7ff6bcc23d47ddfdfdee))
+* **patches:** tidy up patches, deprecate optional poll patch ([cfc5155](https://github.com/cybniv/build-emacs-for-macos/commit/cfc5155199486c4e3fae7edbc7262299b3c9955c))
+* **plan:** resolve issue loading build plan with Ruby 3.x ([a534760](https://github.com/cybniv/build-emacs-for-macos/commit/a5347602cad16fd852386d863d88c025d703b392))
+* **shared-libs:** correctly resolve libwebp libraries ([6ee6d8c](https://github.com/cybniv/build-emacs-for-macos/commit/6ee6d8c13ad4806b4174905dce121750ebd7aa27))
+* **signing:** add self-signing step that is enabled by default ([23a9f30](https://github.com/cybniv/build-emacs-for-macos/commit/23a9f30d45ea25fada809db757b85c175d048936))
+
 ## [0.6.57](https://github.com/jimeh/build-emacs-for-macos/compare/v0.6.56...v0.6.57) (2024-12-07)
 
 
